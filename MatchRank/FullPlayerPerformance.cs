@@ -14,16 +14,16 @@ namespace MatchRank
 
         public RawPlayerPerformance RawPlayerPerformance { get; }
 
-        public IReadOnlyList<MatchScore> MatchScores { get; }
+        public IReadOnlyList<RatedMatchScore> MatchScores { get; }
 
         public double Rating { get; }
 
-        public FullPlayerPerformance(string name, RawPlayerPerformance rawPlayerPerformance, double rating, IList<MatchScore> matchScores)
+        public FullPlayerPerformance(string name, RawPlayerPerformance rawPlayerPerformance, double rating, IList<RatedMatchScore> matchScores)
         {
             Name = name;
             RawPlayerPerformance = rawPlayerPerformance;
             Rating = rating;
-            MatchScores = new List<MatchScore>(matchScores);
+            MatchScores = new List<RatedMatchScore>(matchScores);
         }
     }
 }

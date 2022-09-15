@@ -94,18 +94,19 @@
 
             double teamAPerformance = matchScore.TeamAScore / teamAExpectedPoints;
             double teamBPerformance = matchScore.TeamBScore / teamBExpectedPoints;
+            var ratedMatchScore = new RatedMatchScore(matchScore, teamAPerformance, teamBPerformance);
 
             foreach (var a in matchScore.TeamAPlayers)
-                yield return new PlayerMatchPerformance(a, teamAPerformance, matchScore);
+                yield return new PlayerMatchPerformance(a, teamAPerformance, ratedMatchScore);
 
             foreach (var b in matchScore.TeamBPlayers)
-                yield return new PlayerMatchPerformance(b, teamBPerformance, matchScore);
+                yield return new PlayerMatchPerformance(b, teamBPerformance, ratedMatchScore);
         }
 
         private GenerationRanking GenerateGen0(string[] playerNames)
         {
             double defaultPlayerRating = 1.0;
-            var playerRatings = playerNames.Select(x => new PlayerMatchPerformance(x, defaultPlayerRating, null as MatchScore)).ToArray();
+            var playerRatings = playerNames.Select(x => new PlayerMatchPerformance(x, defaultPlayerRating, null as RatedMatchScore)).ToArray();
             var generation = new GenerationRanking(0, playerRatings);
             return generation;
         }

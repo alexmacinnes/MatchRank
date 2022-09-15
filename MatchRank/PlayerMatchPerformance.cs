@@ -12,16 +12,16 @@ namespace MatchRank
 
         public double Rating { get; }
 
-        public IReadOnlyList<MatchScore> MatchScores { get; }
+        public IReadOnlyList<RatedMatchScore> MatchScores { get; }
 
-        public PlayerMatchPerformance(string playerName, double rating, MatchScore matchScore)
+        public PlayerMatchPerformance(string playerName, double rating, RatedMatchScore matchScore)
             : this(playerName, rating, new [] { matchScore }) { }
 
-        public PlayerMatchPerformance(string playerName, double rating, IList<MatchScore> matchScores)
+        public PlayerMatchPerformance(string playerName, double rating, IList<RatedMatchScore> matchScores)
         {
             PlayerName = playerName;
             Rating = rating;
-            MatchScores = new List<MatchScore>(matchScores);
+            MatchScores = new List<RatedMatchScore>(matchScores);
         }
     }
 }

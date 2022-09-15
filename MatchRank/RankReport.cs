@@ -105,13 +105,13 @@ namespace MatchRank
             return sb.ToString().Trim();
         }
 
-        private static void AppendMatchDetails(MatchScore m, string playerName, Dictionary<string, double> ratingsByPlayer, StringBuilder sb)
+        private static void AppendMatchDetails(RatedMatchScore m, string playerName, Dictionary<string, double> ratingsByPlayer, StringBuilder sb)
         {
             List<string> leftPlayers;
             double leftScore;
             List<string> rightPlayers;
             double rightScore;
-            double matchRating = 0;
+            double matchRating;
 
             if (m.TeamAPlayers.Contains(playerName))
             {
@@ -119,6 +119,7 @@ namespace MatchRank
                 leftScore = m.TeamAScore;
                 rightPlayers = m.TeamBPlayers.ToList();
                 rightScore = m.TeamBScore;
+                matchRating = m.TeamARating;
             }
             else
             {
@@ -126,6 +127,7 @@ namespace MatchRank
                 leftScore = m.TeamBScore;
                 rightPlayers = m.TeamAPlayers.ToList();
                 rightScore = m.TeamAScore;
+                matchRating = m.TeamBRating;
             }
 
             leftPlayers.Remove(playerName);
