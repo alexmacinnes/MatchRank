@@ -1,6 +1,6 @@
 # MatchRank
 
-An alternative scoring system for round robin tournaments. Iterative algoroithm based on Google PageRank.
+An alternative scoring system for round robin tournaments. Iterative algoroithm loosely based on Google PageRank.
 This has been designed to work on Round Robin Tennis doubles tournaments, but could be used for other contests.
 
 ## The Tournament
