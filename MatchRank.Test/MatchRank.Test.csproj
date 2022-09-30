@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,9 +9,15 @@
 
   <ItemGroup>
     <None Remove="SampleTournament.txt" />
+    <None Remove="SampleTournament_DetailedResult.txt" />
+    <None Remove="SampleTournament_GenerationResult.txt" />
+    <None Remove="SampleTournament_SimpleResult.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="SampleTournament_GenerationResult.txt" />
+    <EmbeddedResource Include="SampleTournament_DetailedResult.txt" />
+    <EmbeddedResource Include="SampleTournament_SimpleResult.txt" />
     <EmbeddedResource Include="SampleTournament.txt" />
   </ItemGroup>
 

@@ -1,0 +1,73 @@
+﻿Name             Rating  Match  Total    Won   Lost   Diff    Win%
+--------------  -------  -----  -----  -----  -----  -----  ------
+Viraj           1142.35      4    184    112     72     40  60.87%
+            Viraj(1142), Donna(906)  33 V 24  Andy(1082), Vikram(920)              Match Rating: 1144.63
+            Viraj(1142), Gary(1125)  43 V 13  Salima(942), Stew(918)               Match Rating: 1397.76
+           Viraj(1142), Salima(942)  21 V 21  Andy(1082), Stew(918)                Match Rating: 979.81
+             Viraj(1142), Sam(1113)  15 V 14  Gary(1125), Vikram(920)              Match Rating: 986.20
+
+Kehinde         1133.63      4    153     93     60     33  60.78%
+       Kehinde(1134), Sundaram(985)  30 V 22  Salima(942), Cameron(748)            Match Rating: 1037.15
+          Kehinde(1134), Donna(906)  16 V 19  Sundaram(985), Vikram(920)           Match Rating: 883.93
+            Kehinde(1134), Heb(986)  23 V 9   Cameron(748), Vikram(920)            Match Rating: 1284.37
+         Kehinde(1134), Salima(942)  24 V 10  Cameron(748), Donna(906)             Match Rating: 1268.55
+
+Gary            1124.82      4    194    112     82     30  57.73%
+              Gary(1125), Stew(918)  33 V 39  Sam(1113), Heb(986)                  Match Rating: 929.14
+            Gary(1125), Viraj(1142)  43 V 13  Salima(942), Stew(918)               Match Rating: 1397.76
+              Gary(1125), Sam(1113)  22 V 15  Sundaram(985), Donna(906)            Match Rating: 1097.10
+            Gary(1125), Vikram(920)  14 V 15  Sam(1113), Viraj(1142)               Match Rating: 1015.23
+
+Sam             1112.73      4    190    112     78     34  58.95%
+                Sam(1113), Heb(986)  39 V 33  Gary(1125), Stew(918)                Match Rating: 1068.98
+              Sam(1113), Andy(1082)  36 V 16  Cameron(748), Heb(986)               Match Rating: 1239.22
+              Sam(1113), Gary(1125)  22 V 15  Sundaram(985), Donna(906)            Match Rating: 1097.10
+             Sam(1113), Viraj(1142)  15 V 14  Gary(1125), Vikram(920)              Match Rating: 986.20
+
+Andy            1082.01      4    187    102     85     17  54.55%
+            Andy(1082), Vikram(920)  24 V 33  Donna(906), Viraj(1142)              Match Rating: 851.98
+              Andy(1082), Sam(1113)  36 V 16  Cameron(748), Heb(986)               Match Rating: 1239.22
+              Andy(1082), Stew(918)  21 V 21  Salima(942), Viraj(1142)             Match Rating: 1021.04
+              Andy(1082), Stew(918)  21 V 15  Sundaram(985), Heb(986)              Match Rating: 1158.03
+
+Heb              985.69      4    192     93     99     -6  48.44%
+                Heb(986), Sam(1113)  39 V 33  Gary(1125), Stew(918)                Match Rating: 1068.98
+             Heb(986), Cameron(748)  16 V 36  Andy(1082), Sam(1113)                Match Rating: 697.18
+            Heb(986), Kehinde(1134)  23 V 9   Cameron(748), Vikram(920)            Match Rating: 1284.37
+            Heb(986), Sundaram(985)  15 V 21  Stew(918), Andy(1082)                Match Rating: 839.59
+
+Sundaram         984.69      4    160     79     81     -2  49.38%
+       Sundaram(985), Kehinde(1134)  30 V 22  Salima(942), Cameron(748)            Match Rating: 1037.15
+         Sundaram(985), Vikram(920)  19 V 16  Kehinde(1134), Donna(906)            Match Rating: 1124.33
+          Sundaram(985), Donna(906)  15 V 22  Sam(1113), Gary(1125)                Match Rating: 885.10
+            Sundaram(985), Heb(986)  15 V 21  Stew(918), Andy(1082)                Match Rating: 839.59
+
+Salima           941.80      4    184     80    104    -24  43.48%
+          Salima(942), Cameron(748)  22 V 30  Sundaram(985), Kehinde(1134)         Match Rating: 953.43
+             Salima(942), Stew(918)  13 V 43  Gary(1125), Viraj(1142)              Match Rating: 515.13
+           Salima(942), Viraj(1142)  21 V 21  Andy(1082), Stew(918)                Match Rating: 979.81
+         Salima(942), Kehinde(1134)  24 V 10  Cameron(748), Donna(906)             Match Rating: 1268.55
+
+Vikram           919.82      4    153     66     87    -21  43.14%
+            Vikram(920), Andy(1082)  24 V 33  Donna(906), Viraj(1142)              Match Rating: 851.98
+         Vikram(920), Sundaram(985)  19 V 16  Kehinde(1134), Donna(906)            Match Rating: 1124.33
+          Vikram(920), Cameron(748)   9 V 23  Kehinde(1134), Heb(986)              Match Rating: 638.64
+            Vikram(920), Gary(1125)  14 V 15  Sam(1113), Viraj(1142)               Match Rating: 1015.23
+
+Stew             918.09      4    206     88    118    -30  42.72%
+              Stew(918), Gary(1125)  33 V 39  Sam(1113), Heb(986)                  Match Rating: 929.14
+             Stew(918), Salima(942)  13 V 43  Gary(1125), Viraj(1142)              Match Rating: 515.13
+              Stew(918), Andy(1082)  21 V 21  Salima(942), Viraj(1142)             Match Rating: 1021.04
+              Stew(918), Andy(1082)  21 V 15  Sundaram(985), Heb(986)              Match Rating: 1158.03
+
+Donna            906.29      4    163     74     89    -15  45.40%
+            Donna(906), Viraj(1142)  33 V 24  Andy(1082), Vikram(920)              Match Rating: 1144.63
+          Donna(906), Kehinde(1134)  16 V 19  Sundaram(985), Vikram(920)           Match Rating: 883.93
+          Donna(906), Sundaram(985)  15 V 22  Sam(1113), Gary(1125)                Match Rating: 885.10
+           Donna(906), Cameron(748)  10 V 24  Kehinde(1134), Salima(942)           Match Rating: 663.09
+
+Cameron          748.07      4    170     57    113    -56  33.53%
+          Cameron(748), Salima(942)  22 V 30  Sundaram(985), Kehinde(1134)         Match Rating: 953.43
+             Cameron(748), Heb(986)  16 V 36  Andy(1082), Sam(1113)                Match Rating: 697.18
+          Cameron(748), Vikram(920)   9 V 23  Kehinde(1134), Heb(986)              Match Rating: 638.64
+           Cameron(748), Donna(906)  10 V 24  Kehinde(1134), Salima(942)           Match Rating: 663.09

@@ -109,8 +109,7 @@ namespace MatchRank.Test
             return result;
         }
 
-        [Test]
-        public void SampleTournamentTest()
+        private MatchScore[] ReadSampleTournament()
         {
             string scoresText = ResourceHelper.ReadEmbeddedResource("SampleTournament.txt");
             var matchScores = scoresText
@@ -119,20 +118,54 @@ namespace MatchRank.Test
                 .Where(s => s.Length > 0)
                 .Select(TestLineToMatchScore)
                 .ToArray();
-
+            return matchScores;
+        }
+        private FinalPlayerRanking RunTournament(MatchScore[] matchScores, int generations)
+        {
             var ranker = new PlayerRanker();
             foreach (var x in matchScores)
                 ranker.AddMatchScore(x);
 
-            var rankings = ranker.CalculatePlayerRankings(100);
+            var rankings = ranker.CalculatePlayerRankings(generations);
+            return rankings;
+        }
+
+        [Test]
+        public void SampleTournament_SimpleReport()
+        {
+            var matchScores = ReadSampleTournament();
 
             string simpleRanking = RankReport.GenerateSimpleReport(matchScores);
 
-            string detailedRanking = RankReport.GenerateDetailedRankingReport(rankings);
+            AssertFileContents("SampleTournament_SimpleResult.txt", simpleRanking);
+        }
 
-            string generationReport = RankReport.PlayerGenerationReport(rankings);
+        [Test]
+        public void SampleTournament_DetailedReport()
+        {
+            var matchScores = ReadSampleTournament();
+            var ranking = RunTournament(matchScores, generations: 20);
 
-            Assert.IsNotNull(rankings);
+            string simpleRanking = RankReport.GenerateDetailedRankingReport(ranking);
+
+            AssertFileContents("SampleTournament_DetailedResult.txt", simpleRanking);
+        }
+
+        [Test]
+        public void SampleTournament_GenerationReport()
+        {
+            var matchScores = ReadSampleTournament();
+            var ranking = RunTournament(matchScores, generations: 20);
+
+            string generationRanking = RankReport.PlayerGenerationReport(ranking);
+
+            AssertFileContents("SampleTournament_GenerationResult.txt", generationRanking);
+        }
+
+        private void AssertFileContents(string expectedResource, string actualText)
+        {
+            string expected = ResourceHelper.ReadEmbeddedResource(expectedResource);
+            Assert.AreEqual(expected.Trim(), actualText.Trim());
         }
 
         private MatchScore TestLineToMatchScore(string line)
