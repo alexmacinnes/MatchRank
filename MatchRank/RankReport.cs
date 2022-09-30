@@ -146,5 +146,26 @@ namespace MatchRank
 
 
         }
+
+        public static string PlayerGenerationReport(FinalPlayerRanking rankings)
+        {
+            var resultByPlayer = new SortedDictionary<string, List<double>>();
+            foreach (var r in rankings.FinalPlayerRatings)
+                resultByPlayer[r.Name] = new List<double>();
+
+            foreach (var g in rankings.Generations)
+                foreach (var r in g.PlayerRatings.Values)
+                    resultByPlayer[r.PlayerName].Add(r.Rating);
+
+            var sb = new StringBuilder();
+            foreach (var r in resultByPlayer)
+            {
+                sb.Append(r.Key).Append(",");
+                string scores = string.Join(",", r.Value.Select(x => (1000.0 * x).ToString("F2")));
+                sb.AppendLine(scores);
+            }
+
+            return sb.ToString().TrimEnd();
+        }
     }
 }

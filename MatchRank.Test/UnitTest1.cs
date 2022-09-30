@@ -130,6 +130,8 @@ namespace MatchRank.Test
 
             string detailedRanking = RankReport.GenerateDetailedRankingReport(rankings);
 
+            string generationReport = RankReport.PlayerGenerationReport(rankings);
+
             Assert.IsNotNull(rankings);
         }
 
